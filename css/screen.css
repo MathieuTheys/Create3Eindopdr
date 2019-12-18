@@ -345,6 +345,7 @@ input::placeholder {
 
 .c-card__content{
     font-weight: 300;
+    font-size: 48px;
     height: calc(var(--global-baseline) * 5);
     vertical-align: middle;
     line-height: calc(var(--global-baseline) * 5);
@@ -494,7 +495,10 @@ No media query since this is the default in mobile first design
 
     .c-card__content{
         margin: var(--global-baseline) calc(var(--global-baseline) * 10);
-        
+        font-size: 24px;
+    }
+    .c-card__title{
+        font-size: 32px;
     }
 }
 
