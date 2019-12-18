@@ -1,7 +1,7 @@
 const GetSortiesAsync = async function () {
     let data
         try {
-            let response = await fetch("http://api.warframestat.us/pc/fissures")
+            let response = await fetch("https://api.warframestat.us/pc/fissures")
             data = await response.json()
         } catch (error) {
             alert("Geen gegevens gevonden. \nControleer of je internetverbinding hebt")
