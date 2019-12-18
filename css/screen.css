@@ -46,10 +46,21 @@ html {
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--color-neutral-dark);
     background-image: url("../images/background.jpg");
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    height: 100%; 
+    overflow: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+}
+
+body{
+    height:100%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 *,
@@ -340,12 +351,12 @@ input::placeholder {
 .c-card__title{
     text-decoration: none;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 .c-card__content{
     font-weight: 300;
-    font-size: 48px;
+    font-size: 26px;
     height: calc(var(--global-baseline) * 5);
     vertical-align: middle;
     line-height: calc(var(--global-baseline) * 5);
@@ -489,10 +500,6 @@ No media query since this is the default in mobile first design
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    html{
-        font-size: 32px;
-    }
-
     .c-card__content{
         margin: var(--global-baseline) calc(var(--global-baseline) * 10);
         font-size: 24px;
