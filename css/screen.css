@@ -37,7 +37,7 @@
 */
 
 html {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
     font-family: 'Lato', sans-serif;
     color: var(--color-neutral-light);
@@ -305,9 +305,9 @@ input::placeholder {
 
 .c-app__title {
     text-align: center;
-    margin-bottom: calc(var(--global-baseline) * 4);
-    margin-top: calc(var(--global-baseline) * 2);
-    font-size: 48px;
+    margin-bottom: calc(var(--global-baseline) * 8);
+    margin-top: calc(var(--global-baseline) * 4);
+    font-size: 72px;
     font-weight: 700;
     text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
 }
@@ -339,8 +339,8 @@ input::placeholder {
 
 .c-card__title{
     text-decoration: none;
-    font-weight: 700;
-    font-size: large;
+    font-weight: 500;
+    font-size: 48px;
 }
 
 .c-card__content{
@@ -489,11 +489,12 @@ No media query since this is the default in mobile first design
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     html{
-        font-size: 16px;
+        font-size: 32px;
     }
 
     .c-card__content{
         margin: var(--global-baseline) calc(var(--global-baseline) * 10);
+        
     }
 }
 

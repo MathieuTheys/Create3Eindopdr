@@ -14,14 +14,14 @@ const SetHTMLBody = function(data) {
     let num = 0
     for (var fis of data) {
         let item = `<div class="c-app__card">
-            <div class="c-card__title" onclick="dropIt(\`fis${num}\`);">${fis.node}<div>
+            <div class="c-card__title" onclick="dropIt(\`fis${num}\`);">${fis.node}
+            </div><div>
             <div class="c-card__body" id="fis${num}">
                 <div class="c-card__content">
                     <image class="c-card__image" src="images/${fis.tier}.svg" title="${fis.tier}" />
                     <div>${fis.enemy} - ${fis.missionType}</div>
                     <div>${fis.eta}</div>
                 </div>
-            </div>
         </div>`
         num += 1
         content.innerHTML += item
